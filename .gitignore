@@ -1,0 +1,18 @@
+docs/LaTeX2e_Proceedings_Templates
+.DS_Store
+data/saved_models/
+data/asdi_data/
+data/input_data/dataset/
+data/output/
+data/weather_vae_out/
+data/music_emotion_vae_out/
+data/weather_sonification_output/
+data/midi_for_evaluation/
+data/midi_for_evaluation_2/
+magenta-docker/output/
+# cat-mel_* file is a checkpoint file.
+magenta-docker/models/cat-mel_*
+**/*.pyc
+**/~$*
+musif.log
+musif.log*
