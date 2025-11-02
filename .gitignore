@@ -7,8 +7,8 @@ data/output/
 data/weather_vae_out/
 data/music_emotion_vae_out/
 data/weather_sonification_output/
-data/midi_for_evaluation/
 data/midi_for_evaluation_2/
+data/mp3_for_evaluation_2/
 magenta-docker/output/
 # cat-mel_* file is a checkpoint file.
 magenta-docker/models/cat-mel_*

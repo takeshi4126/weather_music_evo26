@@ -31,6 +31,10 @@ The notebooks at step 8 uses the MelodyRNN as the LSTM to generate the MIDI file
 
 MIDI files will be generated in the midi_for_evaluation_2 folder. samples.csv file there contains the weather data and the date & time used for generating each MIDI file. You can open the midi files by using MuseScore (https://musescore.org).  
 
+## Output used for the Listening Evaluation
+
+The output used for the Listening Evaluation in the paper is found under data/midi_for_evaluation. The "samples.csv" file in the folder contains the weather parameters and music features used for the sonification of the 20 music files. data/mp3_for_evaluation folder contains the sample music files but in mp3 format for the listeners who cannot play the midi files.
+
 ## Folders
 
 - src folder contains the source code files including the Jupyter notebooks.
