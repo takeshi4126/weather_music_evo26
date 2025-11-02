@@ -41,7 +41,10 @@ MIDI files will be generated in the midi_for_evaluation_2 folder. samples.csv fi
 ## References
 
 [1] UK Met Office: Met Office UK Deterministic (UKV) 2km on a 2-year rolling archive, https://registry.opendata.aws/met-office-uk-deterministic/, last ac-cessed 2025/08/31.
+
 [2] Y. Wang, M. Chen and X. Li, "Continuous Emotion-Based Image-to-Music Generation," IEEE Transactions on Multimedia, vol. 26, pp. 5670-5679, 2024. 
+
 [3] A. E. Stewart, "Affective Normative Data for English Weather Words," Atmosphere, vol. 11, no. 8, p. 860, 2020. 
+
 [4] Akiba, T., Sano, S., Yanase, T., Ohta, T., Koyama, M.: Optuna: A Next-generation Hyperparameter Optimization Framework. In: KDD ’19: Proceed-ings of the 25th ACM SIGKDD International Conference on Knowledge Dis-covery & Data Mining (2019). https://doi.org/10.1145/3292500.3330701.
 
