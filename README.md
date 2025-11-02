@@ -27,9 +27,9 @@ The following data are used to train the models.
 
 The notebooks at step 8 uses the MelodyRNN as the LSTM to generate the MIDI files. The MelodyRNN must be run separately before running the notebooks. Since MelodyRNN does not run in the author's computer (Mac OS with M1 chipset) natively, it was run as a docker container. See the magenta-docker folder at the top directory. WeatherSonification.py file contains the code to execute the MelodyRNN in the docker environment.
 
-## Evaluation
+## Output
 
-midi_for_evaluation folder contains the MIDI files used for the listening evaluation (see Section 6.2.6 of the dissertation report). samples.csv file contains the weather data and the date & time used for generating each MIDI file. Listening evaluation was conducted without reading the sample.csv file. 
+MIDI files will be generated in the midi_for_evaluation_2 folder. samples.csv file there contains the weather data and the date & time used for generating each MIDI file. You can open the midi files by using MuseScore (https://musescore.org).  
 
 ## Folders
 
