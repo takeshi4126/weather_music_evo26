@@ -1,12 +1,15 @@
 # Weather Sonification via a Latent Emotion Space
 
+This repository contains the script to convert weather data into music (sonification).
+
 ## Input data
 
 The following data are used to train the models.
 
-1. MIDI files from https://github.com/zBaymax/EIMG provided by the work [1]. There is dataset.zip file in the repository. It should be extracted under input_data/dataset folder. e.g. input_data/dataset/0001.mid
-2. The Excel file containing the annotation of valence & arousal values to each MIDI files, provided by the work [1]. Download it from the same repository above and put it in this folder.
-3. The Excel file containing the annotation of valence, arousal, dominance and surprise values, provided by the work [2]. Download it from https://www.mdpi.com/2073-4433/11/8/860/s1 and put the "Aﬀective Normative Data for English Weather Words supp Table S1.xlsx" file in this folder.
+1. Numerical Weather Prediction (NWP) data from the UK Met Office [1]. The downloaded and converted data for year 2023 is found as data/input_data/asdi_data.parquet.
+2. MIDI files from https://github.com/zBaymax/EIMG provided by the work [2]. It should be extracted under data/input_data/dataset folder. e.g. data/input_data/dataset/0001.mid
+3. The Excel file containing the annotation of valence & arousal values to each MIDI files, provided by the work [2]. Download it from the same repository above and put it in the data/input_data folder.
+4. The Excel file containing the annotation of valence, arousal, dominance and surprise values, provided by the work [3]. Download it from https://www.mdpi.com/2073-4433/11/8/860/s1 and put the "Aﬀective Normative Data for English Weather Words supp Table S1.xlsx" file in the data/input_data folder.
 
 ## Execution
 
@@ -30,9 +33,15 @@ midi_for_evaluation folder contains the MIDI files used for the listening evalua
 
 ## Folders
 
-- model folder contains the python source code for the ML models. They are imported by one or more Jupyter notebook files listed above.
+- src folder contains the source code files including the Jupyter notebooks.
+- src/model folder contains the python source code for the ML models. They are imported by one or more Jupyter notebook files listed above.
+- src/common folder contains some functions shared by multiple Jupyter notebook and model scripts.
+- src/optuna folder contains the scripts to run the model with the Optuna hyper-parameter search framework [4].
 
 ## References
 
-[1] Y. Wang, M. Chen and X. Li, "Continuous Emotion-Based Image-to-Music Generation," IEEE Transactions on Multimedia, vol. 26, pp. 5670-5679, 2024. 
-[2] A. E. Stewart, "Affective Normative Data for English Weather Words," Atmosphere, vol. 11, no. 8, p. 860, 2020. 
+[1] UK Met Office: Met Office UK Deterministic (UKV) 2km on a 2-year rolling archive, https://registry.opendata.aws/met-office-uk-deterministic/, last ac-cessed 2025/08/31.
+[2] Y. Wang, M. Chen and X. Li, "Continuous Emotion-Based Image-to-Music Generation," IEEE Transactions on Multimedia, vol. 26, pp. 5670-5679, 2024. 
+[3] A. E. Stewart, "Affective Normative Data for English Weather Words," Atmosphere, vol. 11, no. 8, p. 860, 2020. 
+[4] Akiba, T., Sano, S., Yanase, T., Ohta, T., Koyama, M.: Optuna: A Next-generation Hyperparameter Optimization Framework. In: KDD ’19: Proceed-ings of the 25th ACM SIGKDD International Conference on Knowledge Dis-covery & Data Mining (2019). https://doi.org/10.1145/3292500.3330701.
+
